@@ -1,7 +1,11 @@
 rule all:
     input:
-        "SRR2584857_quast.4000000",
-        "SRR2584857_annot.4000000",
+        "SRR2584857_quast.120000", # 120k lines 2X coverage
+        "SRR2584857_annot.120000",
+        "SRR2584857_quast.1800000", # 1.8m lines 30x coverage
+        "SRR2584857_annot.1800000",
+        "SRR2584857_quast.3600000", # 3.6m lines 60x coverage
+        "SRR2584857_annot.3600000",
 
 rule subset_reads:
     input:
